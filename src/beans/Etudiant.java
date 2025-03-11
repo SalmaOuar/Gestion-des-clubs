@@ -10,11 +10,24 @@ package beans;
  * @author Yoga
  */
 public class Etudiant {
-    
+
     private int id;
     private String nom;
     private String prenom;
     private String email;
+
+    public Etudiant(int id, String nom, String prenom, String email) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+    }
+
+    public Etudiant(String nom, String prenom, String email) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -48,10 +61,4 @@ public class Etudiant {
         return email;
     }
 
-    public Etudiant(int id, String nom, String prenom, String email) {
-        this.id = id;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.email = email;
-    }
 }
