@@ -44,6 +44,5 @@ CREATE TABLE Adhésion (
     PRIMARY KEY (club_id, etudiant_id),
     FOREIGN KEY (club_id) REFERENCES Club(id) ON DELETE CASCADE,
     FOREIGN KEY (etudiant_id) REFERENCES Étudiant(id) ON DELETE CASCADE
-);
 
 );
