@@ -37,12 +37,11 @@ CREATE TABLE Étudiant (
 );
 
 CREATE TABLE Adhésion (
-    CREATE TABLE Adhésion (
     club_id INT NOT NULL,
     etudiant_id INT NOT NULL,
     date_adhesion DATE NOT NULL,
     PRIMARY KEY (club_id, etudiant_id),
     FOREIGN KEY (club_id) REFERENCES Club(id) ON DELETE CASCADE,
-    FOREIGN KEY (etudiant_id) REFERENCES Étudiant(id) ON DELETE CASCADE
+    FOREIGN KEY (etudiant_id) REFERENCES Étudiant(id) ON DELETE CASCADE    
 
 );
