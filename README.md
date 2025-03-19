@@ -14,7 +14,7 @@ Le diagramme ci-dessous montre les principaux cas d'utilisation de l'application
 ![Image](https://github.com/user-attachments/assets/f6b4fa1a-c4b4-4914-af2f-fe3c2d8c5981)
 
 ## 5. Diagramme de Classe
-![Image](https://github.com/user-attachments/assets/8d1e81bf-f859-45f7-96fe-80f839467a15)
+![Image](https://github.com/user-attachments/assets/84c5030e-1c48-4c8a-ad92-433c0e06e47f)
 
 ## 6. Script Base de Données
 ```sql
