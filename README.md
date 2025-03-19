@@ -1,47 +1,47 @@
 # Gestion des Clubs Étudiants
 
-Ce projet est une application de gestion des clubs étudiants. Elle permet de gérer les clubs, les étudiants et leurs adhésions. L'application est développée en Java avec une base de données MySQL pour la persistance des données. L'interface graphique est construite avec Swing.
+## 1. Contexte
+Les clubs étudiants jouent un rôle crucial dans le développement académique et personnel des étudiants. Ils permettent aux étudiants de s’engager dans des activités extrascolaires, de développer leurs compétences et d’élargir leur réseau social. Cependant, la gestion manuelle des clubs entraîne des problèmes tels que la perte d’informations, la difficulté à suivre les adhésions et un manque de centralisation des données.
 
-## Fonctionnalités
+## 2. Problématique
+L'absence d’un système informatisé pour la gestion des clubs entraîne des inefficacités organisationnelles. Les responsables des clubs ont du mal à suivre les inscriptions, les adhésions et les activités des membres. De plus, l’absence de rapports et de statistiques sur l’adhésion des étudiants complique la prise de décision.
 
-- **Créer un club** : Permet de créer un nouveau club avec un nom, une description et une date de création.
-- **Gérer les adhésions** : Permet d'ajouter des adhésions pour les étudiants aux clubs existants.
-- **Filtrer les membres par club** : Permet de lister les étudiants inscrits dans un club donné.
-- **Rechercher un club par nom** : Permet de rechercher un club en utilisant son nom.
+## 3. Objectif
+L'objectif du projet est de développer une application de gestion des clubs étudiants qui facilite l'administration des clubs, l'enregistrement des adhésions et l'affichage des membres de chaque club. L’application permettra aussi la visualisation graphique des statistiques à l’aide de JFreeChart.
 
-## Structure de la Base de Données
+## 4. Diagramme Use Case
+Le diagramme ci-dessous montre les principaux cas d'utilisation de l'application :
+![Image](https://github.com/user-attachments/assets/f6b4fa1a-c4b4-4914-af2f-fe3c2d8c5981)
 
-La base de données MySQL est composée des tables suivantes :
+## 5. Diagramme de Classe
+![Image](https://github.com/user-attachments/assets/8d1e81bf-f859-45f7-96fe-80f839467a15)
 
-### Tables
-
-- **Club** : Contient les informations sur les clubs.
-- **Étudiant** : Contient les informations sur les étudiants.
-- **Adhésion** : Contient les informations sur les adhésions des étudiants aux clubs.
-
-### Schéma de la Base de Données
-
+## 6. Script Base de Données
 ```sql
 CREATE TABLE Club (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nom VARCHAR(255) NOT NULL,
+    nom VARCHAR(255) NOT NULL UNIQUE,
     description TEXT,
     date_creation DATE NOT NULL
 );
 
-CREATE TABLE Étudiant (
+CREATE TABLE Etudiant (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(255) NOT NULL,
-    prénom VARCHAR(255) NOT NULL,
+    prenom VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE
 );
 
-CREATE TABLE Adhésion (
+CREATE TABLE Adhesion (
     club_id INT NOT NULL,
     etudiant_id INT NOT NULL,
     date_adhesion DATE NOT NULL,
     PRIMARY KEY (club_id, etudiant_id),
     FOREIGN KEY (club_id) REFERENCES Club(id) ON DELETE CASCADE,
-    FOREIGN KEY (etudiant_id) REFERENCES Étudiant(id) ON DELETE CASCADE    
-
+    FOREIGN KEY (etudiant_id) REFERENCES Etudiant(id) ON DELETE CASCADE
 );
+```
+
+
+## 7. Technologies Utilisées
+![Image](https://github.com/user-attachments/assets/8b331c37-d66c-4ccd-8c0f-50fe89ab0502)
