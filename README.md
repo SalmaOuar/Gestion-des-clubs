@@ -11,10 +11,10 @@ L'objectif du projet est de développer une application de gestion des clubs ét
 
 ## 4. Diagramme Use Case
 Le diagramme ci-dessous montre les principaux cas d'utilisation de l'application :
-![Image](https://github.com/user-attachments/assets/f6b4fa1a-c4b4-4914-af2f-fe3c2d8c5981)
+![Image](https://github.com/user-attachments/assets/1a48cc02-2946-4b3f-80a6-23f95301686e)
 
 ## 5. Diagramme de Classe
-![Image](https://github.com/user-attachments/assets/84c5030e-1c48-4c8a-ad92-433c0e06e47f)
+![Image](https://github.com/user-attachments/assets/7a2f3fbf-bc9a-4331-992d-271d3acbd530)
 
 ## 6. Script Base de Données
 ```sql
