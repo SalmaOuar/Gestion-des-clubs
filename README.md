@@ -48,6 +48,6 @@ CREATE TABLE Adhesion (
 
 
 ## 8. Aechitecture 
-
+![Image](https://github.com/user-attachments/assets/7fbd1842-1bb1-40c8-a9f8-ff61a8443c06)
 
 ## 9. Vidéo de démonstration 
