@@ -40,6 +40,19 @@ CREATE TABLE Adhesion (
     FOREIGN KEY (club_id) REFERENCES Club(id) ON DELETE CASCADE,
     FOREIGN KEY (etudiant_id) REFERENCES Etudiant(id) ON DELETE CASCADE
 );
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    login VARCHAR(100) NOT NULL UNIQUE,
+    password TEXT NOT NULL,
+    salt TEXT NOT NULL,
+    question_secrete TEXT,
+    reponse_secrete VARCHAR(100),
+    verification_code VARCHAR(10)
+);
 ```
 
 
