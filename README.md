@@ -45,3 +45,9 @@ CREATE TABLE Adhesion (
 
 ## 7. Technologies Utilisées
 ![Image](https://github.com/user-attachments/assets/8b331c37-d66c-4ccd-8c0f-50fe89ab0502)
+
+
+## 8. Aechitecture 
+
+
+## 9. Vidéo de démonstration 
