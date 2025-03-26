@@ -65,3 +65,5 @@ CREATE TABLE users (
 
 ## 9. Vidéo de démonstration 
 https://github.com/user-attachments/assets/36c734b9-34d2-4cb7-b619-f3c2c20e077e
+## 10. Vidéo de démonstration 2 (+avec set-up en utilisant un script) 
+https://github.com/user-attachments/assets/4ca9a75e-8eff-464a-bcb4-5ba912608a0a
